@@ -30,6 +30,7 @@ $(document).ready(function () {
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       quote + "\n" + author
     )}`;
-    window.open(tweetUrl, "_blank");
+    // window.open(tweetUrl, "_blank");
+    $("a").attr("href", tweetUrl);
   });
 });

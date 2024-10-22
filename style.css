@@ -74,7 +74,8 @@ body {
   padding-top: 25px;
 }
 
-button {
+button,
+a {
   background-color: var(--buttonBgColor);
   border-radius: 30px;
   border: 1px solid transparent;
@@ -87,13 +88,21 @@ button {
   color: inherit;
   margin: 0.5em;
 }
-button:hover {
+
+a {
+  text-decoration: none;
+}
+
+button:hover,
+a:hover {
   border-color: var(--buttonBorderColor);
   border: 2px;
 }
 
 button:focus,
-button:focus-visible {
+button:focus-visible,
+a:focus,
+a:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
